@@ -7,7 +7,7 @@ on:
 
 jobs:
   update_database:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -15,4 +15,4 @@ jobs:
 
     - name: Run SQL script
       run: |
-        mysql -h localhost -u root < update_database.sql
+        "C:\OSPanel\modules\database\MySQL-5.7-Win10\bin\mysql.exe" -h localhost -u root < update_database.sql
