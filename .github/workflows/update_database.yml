@@ -16,4 +16,4 @@ jobs:
     - name: Run SQL script
       shell: cmd
       run: |
-        cmd /c "C:\OSPanel\modules\database\MySQL-5.7-Win10\bin\mysql.exe" -h localhost -u root < update_database.sql
+        cmd /c 'C:\OSPanel\modules\database\MySQL-5.7-Win10\bin\mysql.exe' -h localhost -u root < update_database.sql
