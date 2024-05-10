@@ -13,11 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup MySQL client
-      uses: adrianhayter/setup-mysql-client@v1
-      with:
-        mysql-version: '5.7'
-
     - name: Run SQL script
       run: |
         mysql -h localhost -u root < update_database.sql
