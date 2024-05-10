@@ -14,5 +14,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run SQL script
+      shell: cmd
       run: |
         "C:\OSPanel\modules\database\MySQL-5.7-Win10\bin\mysql.exe" -h localhost -u root < update_database.sql
