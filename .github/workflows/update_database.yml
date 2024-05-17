@@ -1,9 +1,7 @@
 name: Update Database
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  # Это позволяет запускать workflow вручную из интерфейса GitHub
 
 jobs:
   update_database:
